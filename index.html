@@ -11,7 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -40,10 +42,10 @@
                     image.
                 </p>
                 <form id="generate-form" class="mt-4">
-                    <input id="url" type="url" placeholder="Enter a URL"
-                        class="w-full border-2 border-gray-200 rounded
+                    <input id="url" type="url" placeholder="Enter a URL" class="w-full border-2 border-gray-200 rounded
                          p-3 text-gray-dark mr-2 focus:outline-none mb-5">
-                         
+                    <a href="mailto:recipient@example.com?subject=Your%20Subject&body=Your%20Message" class="p-3 rounded bg-red-500 m-auto ">Send Email</a>
+
                     <select id="size"
                         class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none">
                         <option value="100">100*100</option>
@@ -69,9 +71,7 @@
 
         <!-- Generator QR Code -->
 
-        <div
-         id="generated"
-         class="max-w-5xl m-auto flex flex-col
+        <div id="generated" class="max-w-5xl m-auto flex flex-col
          text-center align-center justify-center mt-20">
 
             <!-- Spinner -->
