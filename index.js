@@ -33,6 +33,12 @@ const generateQRCode = (url, size) => {
         height: size
     })
 }
+const emailSubject = 'QR Code';
+const emailBody = 'Here is your QR code:';
+const emailHref = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+// Open the user's default email client
+window.location.href = emailHref;
 const clearUI = ()=>{
     qrcode.innerHTML = '';
     const savelink = document.getElementById("save-link")
