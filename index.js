@@ -28,7 +28,7 @@ const onGenerateSubmit = (e) => {
 const generateQRCode = (url, size) => {
     console.log(size);
     const qrcode = new QRCode("qrcode", {
-        text: "https://wa.me/'url'",
+        text: url,
         width: size,
         height: size
     })
